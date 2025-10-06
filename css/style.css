@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    position: fixed;
+    position: relative;
+    z-index: 100000;
+}
+
+
+
+
+
+
+
+.carousel-caption {
+    background-color: rgb(233, 229, 229);
+    border-radius: 20px;
+    opacity: 0.6;
+
+}
+
+.carousel-caption h5,
+p {
+    color: black;
+}
+
+.card-group {
+    color: blue;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-item {
+    width: 99%;
+    height: 99vh;
+}
+
+/* ###################################################################### */
+.fixed-icons {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1050;
+}
+
+.fixed-icons a {
+    display: block;
+    margin: 8px 0;
+    font-size: 35px;
+    color: rgb(255, 179, 3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+
+/* ################################################################3 */
+
+.d-flex {
+    margin-right: 30px;
+}
+
+.fixed-icons {
+    margin-left: 1440px;
+
+}
+
+.imgback {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/main-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.imgbackground {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/main-2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ################################################################################ */
+.testimonial-card {
+    position: relative;
+    height: 520px;
+    border-radius: 18px;
+    overflow: hidden;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); */
+}
+
+.testimonial-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(2, 2, 2, 0.25), rgba(0, 0, 0, 0.45));
+    z-index: 1;
+}
+
+.avatar {
+    position: absolute;
+    top: 250px;
+    left: 14px;
+    z-index: 2;
+    width: 150px;
+    height: 200px;
+    border-radius: 55px 55px 50px 50px;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 2;
+    max-width: 65%;
+}
+
+
+.card-content h5 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.card-content p {
+    margin: 2px 0 0 0;
+    font-size: 1rem;
+    color: blue;
+}
+
+.vertical-text {
+    position: absolute;
+    right: auto;
+    top: 18px;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.vertical-date {
+    position: absolute;
+    right: auto;
+    top: 38px;
+    z-index: 2;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+
+/* ############################################################################## */
+
+.a7a {
+    position: relative;
+    overflow: hidden;
+}
+
+.a7a::before,
+.a7a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: #333;
+    opacity: 0.3;
+    z-index: 1;
+    transition: 0.50s ease;
+}
+
+
+.a7a::before {
+    left: 0;
+    top: 0;
+}
+
+
+.a7a::after {
+    right: 0;
+    bottom: 0;
+}
+
+.a7a:hover::before,
+.a7a:hover::after {
+    height: 100%;
+    width: 100%;
+}
+
+/* ######################################--for thanks---################################################################ */
+.testimonial-card:hover {
+    transform: scale(0.9);
+    transition: 1s ease;
+
+}
+
+/* ######################################--for thanks---################################################################ */
+.imggg img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12% 100%);
+   
+
+}
+
+@media (max-width: 760px) {
+    .imggg img {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+.iimmgg img {
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+@media (max-width: 760px) {
+    .iimmgg img {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+
+
+
+
+
+
+/* ####################################################################################### */
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    border: 6px solid rgba(255, 255, 255, 0.03);
+    background: #fff;
+    margin-top: 60px;
+
+}
+
+.social-fixed {
+    position: fixed;
+    right: 12px;
+    top: 40%;
+    z-index: 1100;
+}
+
+.social-fixed .btn {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-width: 2px;
+}
+
+@media (max-width: 767.98px) {
+    .social-fixed {
+        display: none !important;
+    }
+}
+
+footer small,
+footer .small {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer {
+    background: #222;
+}
+
+.line-footer {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+}
+
+.line-footer-1 {
+    width: 100%;
+    height: 4px;
+    background-color: #201f1f;
+    padding-top: 120px;
+}
+
+/* ##################################################################################### */
+
+
+
+
+
+
+
